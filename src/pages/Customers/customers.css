@@ -1,0 +1,14 @@
+.container .customer-itens a {
+    margin-bottom: 1.0em;
+    height: 35px;
+    padding: 10px;
+    background-color: #181c2e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:  none;
+}

@@ -1,0 +1,77 @@
+.container .form input{
+    border: 1px solid #ccc;
+    margin: 5px 20px 10px 5px;
+    width: 50%;
+}
+
+.container .form .form-radio {
+    margin-top: -22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container .form .form-radio span {
+    font-size: 1.0em;
+    font-weight: none; 
+}
+
+.container .form input[type="radio"]{
+    width: 15px;
+    margin-top: 22px;
+    position: relative;
+}
+
+.container .form select {
+    border: 1px solid #ccc;
+    margin: 5px 20px 10px 5px;
+    width: 50%;
+    margin-bottom: 0.5em;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 1.0em;
+    resize: none;
+}
+
+.container .form select, textarea {
+    border: 1px solid #ccc;
+    margin: 5px 20px 10px 5px;
+    width: 50%;
+    margin-bottom: 0.5em;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 1.0em;
+    resize: none;
+}
+
+.container .form {
+    width: 100%;
+}
+
+.container .form h3 {
+    font-weight: bold;
+    margin: 5px 0 15px 0;
+    font-size: 18px;
+}
+
+.container .form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container .form .intern {
+    margin-top: -20px
+}
+
+.container button {
+    width: 30%;
+    margin-top: 10px;
+}

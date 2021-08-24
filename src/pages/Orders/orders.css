@@ -1,0 +1,59 @@
+.container .order-itens .button {
+    width: 30%;
+    border: none;
+
+}
+
+.container .order-itens button {
+    width: 30%;
+    border: none;
+    padding: 5px;
+    margin: -2px 5px 0 0;
+    border-radius: 6px;
+    align-items: center;
+
+}
+
+.container .order-itens a {
+    margin-bottom: 1.0em;
+    height: 35px;
+    padding: 10px;
+    background-color: #181c2e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:  none;
+}
+.container .order-itens button svg {
+    vertical-align: middle;
+}
+
+.container .order-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .order-itens table {
+    margin-top: 20px;
+   text-align: center;
+    width: 100%;
+}
+
+.container .order-itens table .badge {
+padding: 3px 5px;
+border-radius: 6px;
+color: #fff;
+}
+
+.container .order-itens table td{
+    border-top: 1px solid rgb(233, 233, 233);
+    padding: 5px 0;
+}
+
