@@ -87,6 +87,7 @@ function NewOrder(props) {
     }
 
     function handleChangeCustomers(e) {
+        SetIdCustomer(e.target.value)
         console.log(e.target.value)
     }
 

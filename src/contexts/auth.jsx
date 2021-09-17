@@ -118,3 +118,6 @@ function AuthProvider({children}){
 }
 
 export default AuthProvider;
+
+
+//<h4>Olá, Mundo! Obrigado Deus pelas Grandes Oportunidades que está me apresentandoneste momento de fraquesa e falta de dinheiro.</h4>
