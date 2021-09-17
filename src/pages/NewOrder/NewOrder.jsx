@@ -10,7 +10,7 @@ import { AuthContext } from '../../contexts/auth';
 function NewOrder(props) {
     const [customers, setCustomers] = useState([]);
     const [load, setLoad] = useState(true);
-    const [idCustomer, SetIdCustomer] = useState(0)
+    const [idCustomer, SetIdCustomer] = useState(0);
     const [subject, setSubject] = useState('Suporte');
     const [status, setStatus] = useState('Aberto');
     const [description, setDescription] = useState('');
@@ -59,11 +59,20 @@ function NewOrder(props) {
         e.preventDefault()
         
        if(description !== '') {
-        await firebase.firestore().collection('customers')
+        await firebase.firestore().collection('orders')
         .add({
-           
+            date: new Date(),
+            customer: customers[idCustomer].fantasyName,
+            customerId: customers[idCustomer].id,
+            subject:subject,
+            status:status,
+            description:description,
+            userId: user.uid,
+            userName: user.name       
         }).then(() => {
-            
+            SetIdCustomer(0);
+            setDescription('');
+
 
             toast.success('Ordem deServiço cadastrada com sucesso!')
         }).catch(error => {
@@ -88,6 +97,7 @@ function NewOrder(props) {
 
     function handleChangeCustomers(e) {
         console.log(e.target.value)
+        SetIdCustomer(e.target.value)
     }
 
 
@@ -105,13 +115,18 @@ function NewOrder(props) {
                         <div>
                             <div>
                             <label>Cliente: </label>
+                            {load ? (
+                                <input type="text"disabled={true}  value={"Carregando clientes..."}/>
+                            )
+                            :
                            <select value={idCustomer} onChange={handleChangeCustomers}>
-                               {customers.map((customer) => {
+                               {customers.map((customer, customerIndex) => {
                                  return(
-                                    <option key={customer.id} value={customer.fantasyName}>{customer.fantasyName}</option>
+                                    <option key={customer.id} value={customerIndex}>{customer.fantasyName}</option>
                                  )
                                })}
                            </select>
+                        }
 
                             </div>
                             <div>

@@ -1,0 +1,30 @@
+.container .form input, textarea, select {
+    border: 1px solid #ccc;
+    margin: 5px 20px 10px 5px;
+    width: 270px;
+}
+
+.container .form {
+    width: 100%;
+}
+
+.container .form span {
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+.container .form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .form .intern {
+    margin-top: -20px
+}
+
+.container button {
+    width: 20%;
+    margin-top: 10px;
+}
